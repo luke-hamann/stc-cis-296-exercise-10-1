@@ -65,7 +65,7 @@ namespace ToDoList.Controllers
             {
                 model.Categories = context.Categories.ToList();
                 model.Statuses = context.Statuses.ToList();
-                return View(task);
+                return View(model);
             }
         }
 
