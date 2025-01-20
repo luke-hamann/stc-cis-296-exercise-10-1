@@ -49,7 +49,7 @@ namespace ToDoList.Controllers
             model.Categories = context.Categories.ToList();
             model.Statuses = context.Statuses.ToList();
             model.CurrentTask = new ToDo();
-            return View();
+            return View(model);
         }
 
         [HttpPost]
