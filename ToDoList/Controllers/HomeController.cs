@@ -46,8 +46,8 @@ namespace ToDoList.Controllers
         public IActionResult Add()
         {
             var model = new ToDoViewModel();
-            ViewBag.Categories = context.Categories.ToList();
-            ViewBag.Statuses = context.Statuses.ToList();
+            model.Categories = context.Categories.ToList();
+            model.Statuses = context.Statuses.ToList();
             return View();
         }
 
