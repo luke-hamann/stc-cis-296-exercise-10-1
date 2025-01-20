@@ -57,7 +57,7 @@ namespace ToDoList.Controllers
         {
             if (ModelState.IsValid)
             {
-                context.ToDos.Add(task);
+                context.ToDos.Add(model.CurrentTask);
                 context.SaveChanges();
                 return RedirectToAction("Index");
             }
