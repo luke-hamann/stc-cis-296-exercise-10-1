@@ -48,6 +48,7 @@ namespace ToDoList.Controllers
             var model = new ToDoViewModel();
             model.Categories = context.Categories.ToList();
             model.Statuses = context.Statuses.ToList();
+            model.CurrentTask = new ToDo();
             return View();
         }
 
