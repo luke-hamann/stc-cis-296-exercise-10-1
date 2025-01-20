@@ -14,7 +14,7 @@
     <div class="form-group">
         <label asp-for="CurrentTask.CategoryId">Category:</label>
         <select asp-for="CurrentTask.CategoryId" class="form-control"
-                asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "Name"))">
+                asp-items="@(new SelectList(Model.Categories, "CategoryId", "Name"))">
             <option value=""></option>
         </select>
     </div>
@@ -27,7 +27,7 @@
     <div class="form-group">
         <label asp-for="CurrentTask.StatusId">Status:</label>
         <select asp-for="CurrentTask.StatusId" class="form-control"
-                asp-items="@(new SelectList(ViewBag.Statuses, "StatusId", "Name"))">
+                asp-items="@(new SelectList(Model.Statuses, "StatusId", "Name"))">
             <option value=""></option>
         </select>
     </div>
