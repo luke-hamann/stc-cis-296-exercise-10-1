@@ -53,7 +53,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(ToDo task)
+        public IActionResult Add(ToDoViewModel model)
         {
             if (ModelState.IsValid)
             {
