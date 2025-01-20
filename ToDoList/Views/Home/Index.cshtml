@@ -48,7 +48,7 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach (ToDo task in Model)
+            @foreach (ToDo task in Model.Tasks)
             {
                 string overdue = Overdue(task);
                 <tr>
